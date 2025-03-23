@@ -34,6 +34,7 @@ class Snake:
     def move(self):
         """Moves the snake head as well as any segments behind it."""
         for seg_num in range(len(self.segments) - 1, 0, -1):
+            # i forgot what the numbers at the end do, figure out later
             new_x = self.segments[seg_num - 1].xcor()
             new_y = self.segments[seg_num - 1].ycor()
             self.segments[seg_num].goto(new_x, new_y)
